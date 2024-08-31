@@ -55,13 +55,13 @@ footer {
     box-shadow: 10px 10px 30px #1b1b1b, -10px -10px 30px #3a3a3a;
 }
 
-form label, form input {
+form label, form input, form textarea {
     display: block;
     margin: 10px 0;
     font-size: 1rem;
 }
 
-form input {
+form input, form textarea {
     padding: 10px;
     width: 100%;
     border: none;
@@ -144,4 +144,8 @@ form button:hover {
 
 .close-btn:hover {
     color: #4CAF50;
+}
+
+textarea {
+    resize: vertical;
 }
