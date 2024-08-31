@@ -11,54 +11,59 @@
         <div class="logo">
             <h1>Tavern TTRPG Club</h1>
         </div>
-        <nav>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#booking">Booking</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="home" class="card neomorphic">
-        <h2>Welcome to Tavern TTRPG Club</h2>
-        <p>Experience the ultimate tabletop RPG adventures in a cozy, tavern-like setting. Join us for immersive games, themed events, and more!</p>
-    </section>
+    <main>
+        <section id="home" class="card neomorphic">
+            <h2>Welcome to Tavern TTRPG Club</h2>
+            <p>Experience the ultimate tabletop RPG adventures in a cozy, tavern-like setting. Join us for immersive games, themed events, and more!</p>
+        </section>
+    </main>
 
-    <section id="membership" class="card neomorphic">
-        <h2>Membership Tiers</h2>
-        <ul>
-            <li><strong>Bronze:</strong> Access to exclusive game nights.</li>
-            <li><strong>Silver:</strong> Includes Bronze perks + custom merchandise.</li>
-            <li><strong>Gold:</strong> Includes Silver perks + free sessions every month.</li>
-        </ul>
-    </section>
+    <nav class="bottom-nav">
+        <button data-target="membership">Membership</button>
+        <button data-target="booking">Booking</button>
+        <button data-target="contact">Contact</button>
+    </nav>
 
-    <section id="booking" class="card neomorphic">
-        <h2>Book a Table</h2>
-        <form id="booking-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required>
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
+    <div id="membership" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Membership Tiers</h2>
+            <ul>
+                <li><strong>Bronze:</strong> Access to exclusive game nights.</li>
+                <li><strong>Silver:</strong> Includes Bronze perks + custom merchandise.</li>
+                <li><strong>Gold:</strong> Includes Silver perks + free sessions every month.</li>
+            </ul>
+        </div>
+    </div>
 
-    <section id="contact" class="card neomorphic">
-        <h2>Contact Us</h2>
-        <p>Email: info@tavernttrpgcafe.com</p>
-        <p>Phone: +98-13-XXXXXXX</p>
-    </section>
+    <div id="booking" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Book a Table</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="contact" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Email: info@tavernttrpgcafe.com</p>
+            <p>Phone: +98-13-XXXXXXX</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Tavern TTRPG Club | All Rights Reserved</p>
